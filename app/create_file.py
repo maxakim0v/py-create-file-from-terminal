@@ -7,7 +7,7 @@ from typing import List
 def create_directory(dirs: List[str]) -> None:
     try:
         os.makedirs(os.path.join(*dirs), exist_ok=True)
-        print(f"Directory {"/".join(dirs)} created successfully.")
+        print(f"Directory created successfully.")
     except Exception as e:
         print(f"Error creating directory: {e}")
 
